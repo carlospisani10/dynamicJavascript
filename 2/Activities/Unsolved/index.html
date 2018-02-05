@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var shoutName = function (name) {
+            document.write(name.toUpperCase());
+        }
+
+        function printName(name) {
+            document.write(name);
+        }
+
+        function greet(name, myfunction) {
+            document.write("Welcome: ");
+            myfunction(name);
+        }
+
+        greet("Joe", printName);
+        greet("Joe", shoutName);
+        greet("Joe", function(name) {
+            console.log(name);
+        })
+    </script>
+
+</body>
+</html>
