@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aliens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+   <!-- Bootstrap core CSS -->
+   <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+   <link href="dashboard.css" rel="stylesheet">
+
+   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <h2>Saw a UFO? Store it Here!</h2>
+        <form>
+        <ul>
+        <li label for="city"> City</label>
+          <input type="text" class="form-control" id="cityrecord"></li>
+          <li><label for="Country">Country</label>
+            <input type="text" class="form-control" id="countryrecord"></li>
+          <li> <label for="name">Date/Time</label>
+            <input type="text" class="form-control" id="daterecord"></li>
+          <li><label for="item">State</label>
+            <input type="text" class="form-control" id="staterecord"></li>
+          <li><label for="perishable">Shape</label>
+            <input type="text" class="form-control" id="shaperecord"></li>
+          <li>  <label for="perishable">Duration</label>
+            <input type="text" class="form-control" id="durationrecord">></li>
+          <li><label for="perishable">Description</label>
+            <input type="text" class="form-control" id="descriptionrecord"></li>
+          </ul>
+          <button id="submit" class="btn btn-success right">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" class="form-control" id="searchdate" placeholder="Date">
+            <input type="text" class="form-control" id="searchstate" placeholder="State">
+            <input type="text" class="form-control" id="searchcity" placeholder="City">
+            <input type="text" class="form-control" id="searchcountry" placeholder="Country">
+            <input type="text" class="form-control" id="searchshape" placeholder="Shape">
+            <input type="text" class="form-control" id="searchduration" placeholder="Duration">
+            <input type="text" class="form-control" id="searchdescription" placeholder="Description">
+          <a id="search" class="btn btn-default">Search by Key Value</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped" id="ufoTable">
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody id="ufoBody">
+          </tbody>
+        </table>
+        <div id = "pagination"></div>
+      </div>
+    </div>
+  </div>
+  <script src="testData.js" type="text/javascript"></script>
+  <script src="scriptMultiple.js" type="text/javascript"></script>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
